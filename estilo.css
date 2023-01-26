@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+}
+body{
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: rgb(76, 84, 93);
+    letter-spacing: 1px;
+    text-align: center;
+   /*l line-height: 1.5;*/
+}
+
+header{
+    background: url(images/bg-header-mobile.png) center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 6em 0.2em;
+    margin-bottom: 1em;
+}
+
+header .text-intro img{
+    margin-bottom: 1.2em;
+}
+
+button{
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+    font-size: 0.88em;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    padding: 15px 5em;
+    margin: 0.8em;
+}
+
+p{
+    margin: 1.1em;
+    color: rgb(159, 171, 178);
+}
+
+h1,
+h2,
+h3{
+    margin: 1.5em;
+}
+
+.ios{
+    background-color: rgb(38, 186, 164);
+    box-shadow: 0px 1px 1px 1px hsl(171, 66%, 37%);
+    border: 1.5px solid rgb(36, 146, 130); 
+}
+
+.ios:hover,
+.ios:focus{
+    background-color: rgb(70, 194, 175);
+}
+
+.mac{
+    background-color: rgb(97, 115, 255);
+    box-shadow: 0px 1px 1px 1px hsl(233, 75%, 57%);
+    border: 1.5px solid rgb(60, 71, 160);
+}
+
+.mac:hover,
+.mac:focus{
+    background-color: rgb(125, 139, 248)
+}
+
+/*seccion snippets*/
+
+.snippets{
+    padding: 0 0.5em;
+}
+section .text-container{
+    margin-bottom: 3.3em;
+}
+
+img{
+    max-width: 100%;
+}
+
+.contenedor-grid .col2 {
+  margin-top: 4em;
+  margin-bottom: 8em;
+}
+
+.contenedor-grid h3{
+    margin-bottom: 1.5em;
+}
+
+/*seccion tools*/
+
+.grid-card{
+    padding-top: 0.5em;
+    padding-bottom: 5.9em;
+}
+
+.grid-card img{
+    margin-top: 1.9em;
+}
+
+.logos img{
+    padding: 1.5em;
+}
+
+/*seccion descargas*/
+
+section.descargas{
+    margin-top: 7.1em;
+    margin-bottom: 11em;
+}
+
+/*pie de pagina*/
+
+footer{
+    background-color: hsl(210, 17%, 95%);
+    padding: 1em;
+}
+
+footer img{
+    height: 3.5em;
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+}
+
+
+footer nav ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+footer nav ul li{
+    padding: 8px;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(76, 84, 93);
+}
+
+footer a:hover,
+footer a:focus{
+    color: rgb(38, 186, 164);
+    text-decoration: underline;
+}
+
+footer .icons{
+    margin-top: 20px;
+}
+
+footer .icons a{
+    padding: 20px;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    margin: 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 768px){
+    header {
+        background: url(images/bg-header-desktop.png) no-repeat;
+    }
+    header .text-intro{
+        width: 65%;
+    }
+    header .text-intro img{
+        margin-bottom: 1em;
+    }
+    h1{
+        margin-bottom: 1em;
+        padding-bottom: 0;
+    }
+    header .text-intro p{
+        margin-bottom: 30px;
+    }
+    
+    /*seccion snippets*/
+    
+    .text-container{
+        width: 65%;
+        margin: 8% auto;
+    }
+
+    .snippets .contenedor-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .snippets .contenedor-grid .col1 img{
+        margin-left: -80px;
+    }
+
+    .snippets .contenedor-grid .col2 {
+        width: 70%;
+        margin-top: 15px;
+    }
+    .col2 h3{
+        text-align: justify;
+    }
+
+    .col2 p{
+        text-align: left;
+    }
+
+   /*seccion tools*/
+
+   .tools .grid-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 90%;
+    margin-left: 5%;
+   }
+
+   .tools .grid-card img{
+    margin-bottom: 15px;
+}
+
+.tools .logos img{
+    padding: 3em;
+}
+
+/*footer*/
+
+footer .containes-footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 0.5em;
+    padding-bottom: 0;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -80px;
+}
+nav ul li{
+    margin: 10px 50px 20px 0;
+}
+footer .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+}
